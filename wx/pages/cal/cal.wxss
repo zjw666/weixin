@@ -1,0 +1,164 @@
+/* pages/cal/cal.wxss */
+#welcome{
+  font-weight: bold;
+  font-style: italic;
+  padding: 10rpx;
+}
+.cal{
+  margin: 20% 10%;
+  margin-bottom: 0;
+  height:700rpx;
+  border: 1px solid #ddd;
+  background-color: #F5FFFA;
+  border-radius: 5px;
+}
+
+.input_box{
+  height:100rpx;
+  width: 90%;
+  margin: 30rpx auto;
+  font-size: 50rpx;
+  line-height: 100rpx;
+  text-align: right;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 3px;
+  padding-right: 10rpx;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.button_area,.history{
+  width:90%;
+  margin: 0 auto;
+}
+
+.row{
+  display: flex;
+  height:80rpx;
+  width:100%;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.short{
+  width:79%;
+}
+
+.button_item{
+  height:80rpx;
+  width:80rpx;
+  font-size:60rpx;
+  background-color: white;
+  text-align: center;
+  padding: 0;
+  line-height:80rpx;
+  border-radius: 3px;
+  margin: 0;
+}
+
+.brace{
+  font-size: 55rpx;
+  line-height: 65rpx;
+  font-weight: 30rpx;
+}
+
+.equal{
+  float: right;
+  display: inline-block;
+  height:180rpx;
+  line-height: 180rpx;
+}
+
+.history{
+  font-size: 60rpx;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  position: relative;
+}
+
+#text_box{
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+#slide{
+  width: 80rpx;
+  height: 86rpx;
+  display: inline-block;
+  float: right;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 35rpx;
+  padding: 0;
+  border-radius: 0px !important;
+}
+
+#slide::after{
+  border: 0px;
+  border-radius: 0px !important;
+  border-left: 1px solid #ddd;
+}
+
+.button-hover{
+    background-color: #B0B0B0;
+}
+
+#box{
+  width: 100%;
+  border-top: 1px solid #ddd;
+  overflow: hidden;
+  height: 0;
+  animation-fill-mode: forwards;
+}
+
+#item_list{
+    background-color: white;
+    width: 100%;
+}
+
+#item_list view{
+    text-align: right;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+@keyframes slidedown{
+    from {
+        height: 0;
+    }
+    to {
+        height: 240rpx;
+    }
+}
+
+@keyframes slideup{
+    from {
+        height: 240rpx;
+    }
+    to {
+        height: 0;
+    }
+}
+
+.open{
+    animation: slidedown 1s;
+}
+
+.close{
+    animation: slideup 1s; 
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+

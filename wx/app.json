@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/cal/cal"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "迷你计算器",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#C0C0C0",
+    "enablePullDownRefresh": true
+  },
+  "debug": true
+}

@@ -1,0 +1,45 @@
+<!--pages/cal/cal.wxml-->
+<view id="welcome"><text>欢迎你：{{nickname}}</text></view>
+<view class="cal">
+  <view class="input_box"><text>{{value}}</text></view>
+  <view class="button_area" bindtap='clickButton'>
+    <view class="row">
+      <button class="row1-item button_item" data-value="7" hover-stay-time='120'>7</button>
+      <button class="row1-item button_item" data-value="8" hover-stay-time='120'>8</button>
+      <button class="row1-item button_item" data-value="9" hover-stay-time='120'>9</button>
+      <button class="row1-item button_item" data-value="/" hover-stay-time='120'>/</button>
+      <button class="row1-item button_item" data-value="back" hover-stay-time='120'>←</button>
+    </view>
+    <view class="row">
+      <button class="row1-item button_item" data-value="4" hover-stay-time='120'>4</button>
+      <button class="row1-item button_item" data-value="5" hover-stay-time='120'>5</button>
+      <button class="row1-item button_item" data-value="6" hover-stay-time='120'>6</button>
+      <button class="row1-item button_item" data-value="*" hover-stay-time='120'>*</button>
+      <button class="row1-item button_item" data-value="." hover-stay-time='120'>.</button>
+    </view>
+    <button class="button_item equal" data-value="=" hover-stay-time='120'>=</button>
+    <view class="row short">
+      <button class="row1-item button_item" data-value="1" hover-stay-time='120'>1</button>
+      <button class="row1-item button_item" data-value="2" hover-stay-time='120'>2</button>
+      <button class="row1-item button_item" data-value="3" hover-stay-time='120'>3</button>
+      <button class="row1-item button_item" data-value="-" hover-stay-time='120'>-</button>
+    </view>
+    <view class="row short">
+      <button class="row1-item button_item" data-value="0" hover-stay-time='120'>0</button>
+      <button class="row1-item button_item brace" data-value="(" hover-stay-time='120'>(</button>
+      <button class="row1-item button_item brace" data-value=")" hover-stay-time='120'>)</button>
+      <button class="row1-item button_item" data-value="+" hover-stay-time='120'>+</button>
+    </view>
+  </view>
+  <view class="history">
+    <view id="text_box">
+      <text decode='true'>&nbsp;历&nbsp;史&nbsp;记&nbsp;录</text>
+    </view>
+    <button id="slide" bindtap="toggle">▼</button>
+    <view id="box" class="{{first_click?'show':'hide'}} {{state?'open':'close'}}">
+      <view id="item_list" bindtap="clickhistory">
+        <view wx:for="{{history}}" data-index="{{index}}">{{item}}</view>
+      </view>
+    </view>
+  </view>
+</view>

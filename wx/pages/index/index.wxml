@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="cover">
+    <image src="{{userInfo.avatarUrl}}" class="userinfo-avatar" mode="cover"></image>
+  </view>
+  <text>{{userInfo.nickName}}</text>
+  <view class="model" wx:if="{{showModel}}">
+    <view class="modelTitle">微信授权</view>
+    <view class="modelBody">微信登录需要获取你的用户信息，请前往授权</view>
+    <view class="btns">
+      <button open-type="getUserInfo" class="getInfo_button" bindgetuserinfo='getUserInfo' bindtap='closeModel'>去授权</button>
+    </view>
+  </view>
+  <view class="mask" wx:if="{{showModel}}"></view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
