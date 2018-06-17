@@ -25,7 +25,7 @@ SECRET_KEY = '%&ff$%781_xz5!^!ys*a#-7-93r)rgp79q=)+93$(016cdj3*g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.zjw666.com']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -120,8 +120,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-APPID = 'wxc8309ba5f938d206'
+APPID = '*****'
 
-APPSECRET = 'f1c8304ed08b94d8d82ba5059103e330'
+APPSECRET = '********'
 
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
