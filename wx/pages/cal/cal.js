@@ -31,7 +31,7 @@ Page({
         });
       }
       wx.request({
-        url: 'https://www.i-love-jialu.vip/getData',
+        url: '********',
         data:{
             openid: app.globalData.openid,
             nickname: this.data.nickname
@@ -313,7 +313,7 @@ Page({
   */ 
   save: function(expressions){
       wx.request({
-        url: 'https://www.i-love-jialu.vip/saveData',
+        url: '**********',
         data: {
             openid: app.globalData.openid,
             save_data: expressions
