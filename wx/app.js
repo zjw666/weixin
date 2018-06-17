@@ -15,7 +15,7 @@ App({
     wx.login({
       success: res => {
           wx.request({
-            url: 'https://www.i-love-jialu.vip/getopenid',
+            url: '*********',
             data: {
                code: res.code
             },
